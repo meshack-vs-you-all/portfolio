@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Meshack Mogire</title>
+  <meta name="description" content="Full-stack engineer and founder based in Nairobi, Kenya. 5+ years building production systems, AI infrastructure, and live products." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="curtain" id="curtain"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">MESHACK<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-avail"><span class="pulse"></span> Available</div>
+    <button class="nav-mobile-btn" onclick="toggleMobileNav()"><span></span><span></span></button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" onclick="closeMobileNav()">Home</a>
+    <a href="work.html" onclick="closeMobileNav()">Work</a>
+    <a href="about.html" onclick="closeMobileNav()">About</a>
+    <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <div class="page-hero">
+    <span class="label" id="ph-label">About</span>
+    <h1 id="ph-title">The person<br/>behind the code.</h1>
+  </div>
+
+  <!-- INTRO -->
+  <section style="border-top: 1px solid var(--border);">
+    <div class="inner">
+      <div class="about-intro">
+        <div class="about-intro-text">
+          <p>I'm <strong>Meshack Mogire</strong> — a full-stack engineer and founder based in Nairobi, Kenya. I've spent over five years building production digital systems for real businesses: complete web platforms, AI-powered agents, M-Pesa and WhatsApp integrations, self-hosted infrastructure, and automated content pipelines.</p>
+          <p>I founded <strong>Crafted Edge Solutions</strong> to bring the same quality of digital infrastructure that large companies use to small and growing businesses in Kenya and across Africa. I also built <strong>Wellness Solutions Africa</strong> — a full health platform that handles bookings, payments, and AI-assisted client management.</p>
+          <p>I don't hand off to someone else. I architect the system, write the code, deploy it, and keep it running. <strong>That's why my rates reflect the full value of what you get.</strong></p>
+          <p>I work with Claude Code and local AI infrastructure daily as a tool — not for demos. I run Groq LLaMA 70B as my primary agent, GPU-accelerated Ollama inference locally, and automated pipelines that run on their own.</p>
+          <a href="contact.html" class="btn btn-fill" style="margin-top:24px">Work with me →</a>
+        </div>
+        <div class="about-visual reveal">
+          <div class="about-visual-placeholder">MM</div>
+          <div class="about-visual-note">Photo · Nairobi, Kenya</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section style="border-top: 1px solid var(--border);">
+    <div class="inner">
+      <span class="label reveal">Skills</span>
+      <h2 class="big reveal">The full toolkit.<br/>All of it shipped.</h2>
+      <p class="sub reveal">Every skill below has been used in production — not listed from a tutorial.</p>
+      <div class="skills-block">
+        <div class="skill-row">
+          <span class="skill-cat">Frontend</span>
+          <div class="chips">
+            <span class="chip">React</span><span class="chip">Next.js</span><span class="chip">TypeScript</span>
+            <span class="chip">TailwindCSS</span><span class="chip">HTML5 / CSS3</span><span class="chip">GSAP</span>
+            <span class="chip">Responsive Design</span><span class="chip">Web Performance</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">Backend & APIs</span>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">Django</span><span class="chip">Django REST Framework</span>
+            <span class="chip">FastAPI</span><span class="chip">Node.js</span><span class="chip">Wagtail CMS</span>
+            <span class="chip">REST API Design</span><span class="chip">WebSockets</span><span class="chip">Celery</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">AI / Agents</span>
+          <div class="chips">
+            <span class="chip">Ollama</span><span class="chip">Groq API</span><span class="chip">Claude API</span>
+            <span class="chip">OpenAI API</span><span class="chip">MCP Protocol</span><span class="chip">LangChain</span>
+            <span class="chip">n8n</span><span class="chip">Custom AI Agents</span><span class="chip">Prompt Engineering</span>
+            <span class="chip">Local LLM Infra</span><span class="chip">GPU Inference (CUDA)</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">Infrastructure</span>
+          <div class="chips">
+            <span class="chip">Docker</span><span class="chip">Linux / Ubuntu</span><span class="chip">systemd</span>
+            <span class="chip">Nginx</span><span class="chip">Cloudflare Pages</span><span class="chip">Railway</span>
+            <span class="chip">Vercel</span><span class="chip">GitHub Actions</span><span class="chip">Bash / Shell</span>
+            <span class="chip">WSL2</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat">Data & Payments</span>
+          <div class="chips">
+            <span class="chip">PostgreSQL</span><span class="chip">SQLite</span><span class="chip">Supabase</span>
+            <span class="chip">Redis</span><span class="chip">M-Pesa Daraja API</span><span class="chip">Stripe</span>
+            <span class="chip">Flutterwave</span><span class="chip">WhatsApp Business API</span>
+            <span class="chip">SendGrid</span><span class="chip">Listmonk</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI STACK -->
+  <section style="border-top: 1px solid var(--border);">
+    <div class="inner">
+      <span class="label reveal">AI Infrastructure</span>
+      <h2 class="big reveal">I run this.<br/>In production.<br/>Daily.</h2>
+      <p class="sub reveal">This isn't a learning project. I built and maintain a full local + cloud AI stack on my own hardware — GPU inference, multi-tool agents, and automated pipelines running 24/7.</p>
+      <div class="terminal-wrap">
+        <div class="term-bar">
+          <div class="term-dot td-r"></div><div class="term-dot td-y"></div><div class="term-dot td-g"></div>
+          <span class="term-title">meshack@local: ~/.ai-stack</span>
+        </div>
+        <div class="term-body">
+          <span><span class="tp">$</span> <span style="color:var(--fg-2)">cat ai-stack.yml</span></span>
+          <span class="ts"></span>
+          <span><span class="tk">agents:</span></span>
+          <span>&nbsp;&nbsp;<span class="tc"># Hermes — primary multi-tool agent</span></span>
+          <span>&nbsp;&nbsp;<span class="tk">hermes:</span></span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tk">primary:</span> <span class="tv">groq/llama-3.3-70b-versatile</span></span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tk">fallback:</span> <span class="tv">ollama/qwen3:4b</span></span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tk">tools:</span> <span class="tv">[spotify, web_search, files, cron, agent_delegation]</span></span>
+          <span>&nbsp;&nbsp;<span class="tk">pi:</span> <span class="tv">coding agent · node.js · groq/llama-3.3-70b</span></span>
+          <span class="ts"></span>
+          <span><span class="tk">local_inference:</span></span>
+          <span>&nbsp;&nbsp;<span class="tk">gpu:</span> <span class="tv">NVIDIA GTX 960 · CUDA · 22–32 tok/s</span></span>
+          <span>&nbsp;&nbsp;<span class="tk">models:</span> <span class="tv">[qwen3:4b, gemma3:4b, qwen2.5-coder:3b, nomic-embed-text]</span></span>
+          <span class="ts"></span>
+          <span><span class="tk">automated_pipelines:</span></span>
+          <span>&nbsp;&nbsp;<span class="tk">blog_writer:</span> <span class="tv">groq llama-70b · Mon/Thu 4am · drafts to both sites</span></span>
+          <span>&nbsp;&nbsp;<span class="tk">health_monitor:</span> <span class="tv">every 5min · containers · ports · external sites</span></span>
+          <span>&nbsp;&nbsp;<span class="tk">dotfiles_sync:</span> <span class="tv">daily 3am → github</span></span>
+          <span class="ts"></span>
+          <span><span class="tk">services:</span></span>
+          <span>&nbsp;&nbsp;<span class="tk">ollama:</span> <span class="tv">localhost:11434 · systemd · active</span></span>
+          <span>&nbsp;&nbsp;<span class="tk">open_webui:</span> <span class="tv">localhost:8080 · docker · self-hosted</span></span>
+          <span>&nbsp;&nbsp;<span class="tk">listmonk:</span> <span class="tv">localhost:9000 · docker · email marketing</span></span>
+          <span class="ts"></span>
+          <span><span class="tp">$</span> <span class="tc">_</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section style="border-top: 1px solid var(--border);">
+    <div class="inner">
+      <span class="label reveal">How I Work</span>
+      <h2 class="big reveal" style="margin-bottom:64px">Straight-line from idea<br/>to live system.</h2>
+      <div style="display:grid; grid-template-columns: repeat(4,1fr); gap:1px; background:var(--border);" class="stagger-group">
+        <div style="background:var(--bg); padding:36px 28px;" class="stagger-item">
+          <div style="font-family:var(--display);font-size:0.68rem;font-weight:700;letter-spacing:0.12em;color:var(--accent);margin-bottom:20px;">01</div>
+          <h3 style="font-family:var(--display);font-size:1rem;font-weight:700;margin-bottom:12px;">Understand</h3>
+          <p style="font-size:0.85rem;color:var(--fg-2);line-height:1.7;font-weight:300;">I ask the questions that reveal the real problem — not just what you asked for.</p>
+        </div>
+        <div style="background:var(--bg); padding:36px 28px;" class="stagger-item">
+          <div style="font-family:var(--display);font-size:0.68rem;font-weight:700;letter-spacing:0.12em;color:var(--accent);margin-bottom:20px;">02</div>
+          <h3 style="font-family:var(--display);font-size:1rem;font-weight:700;margin-bottom:12px;">Architect</h3>
+          <p style="font-size:0.85rem;color:var(--fg-2);line-height:1.7;font-weight:300;">You see the full system map before a line of code is written. No surprises.</p>
+        </div>
+        <div style="background:var(--bg); padding:36px 28px;" class="stagger-item">
+          <div style="font-family:var(--display);font-size:0.68rem;font-weight:700;letter-spacing:0.12em;color:var(--accent);margin-bottom:20px;">03</div>
+          <h3 style="font-family:var(--display);font-size:1rem;font-weight:700;margin-bottom:12px;">Build & Ship</h3>
+          <p style="font-size:0.85rem;color:var(--fg-2);line-height:1.7;font-weight:300;">I build in sprints. You get access to a live staging environment from week one.</p>
+        </div>
+        <div style="background:var(--bg); padding:36px 28px;" class="stagger-item">
+          <div style="font-family:var(--display);font-size:0.68rem;font-weight:700;letter-spacing:0.12em;color:var(--accent);margin-bottom:20px;">04</div>
+          <h3 style="font-family:var(--display);font-size:1rem;font-weight:700;margin-bottom:12px;">Maintain</h3>
+          <p style="font-size:0.85rem;color:var(--fg-2);line-height:1.7;font-weight:300;">I don't disappear after launch. The systems I build run because I keep them running.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-l">MESHACK<span class="acc">.</span></div>
+    <p>Nairobi, Kenya · EAT · © 2026</p>
+    <div class="foot-links">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://github.com/meshack-vs-you-all" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <div class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    gsap.from(['#ph-label','#ph-title'], { opacity:0, y:40, stagger:0.15, duration:0.9, ease:'power3.out', delay:0.4 });
+  </script>
+</body>
+</html>

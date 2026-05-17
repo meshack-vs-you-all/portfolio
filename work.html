@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Meshack Mogire</title>
+  <meta name="description" content="Selected projects — full-stack web apps, AI agent systems, automation, and live businesses built by Meshack Mogire." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="curtain" id="curtain"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">MESHACK<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-avail"><span class="pulse"></span> Available</div>
+    <button class="nav-mobile-btn" onclick="toggleMobileNav()"><span></span><span></span></button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" onclick="closeMobileNav()">Home</a>
+    <a href="work.html" onclick="closeMobileNav()">Work</a>
+    <a href="about.html" onclick="closeMobileNav()">About</a>
+    <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <div class="page-hero">
+    <span class="label" id="ph-label">Work</span>
+    <h1 id="ph-title">Selected<br/>Projects.</h1>
+    <p>Two live companies. Client systems. Open-source tools. Personal AI infrastructure. Designed, built, deployed, and maintained by me — not handed off.</p>
+  </div>
+
+  <div class="project-list">
+
+    <div class="proj-item">
+      <div class="proj-idx">01</div>
+      <div class="proj-info">
+        <h3>Crafted Edge Solutions</h3>
+        <p>My digital agency serving businesses in Kenya and Africa. I built the entire stack: the company website, self-hosted email marketing (Listmonk), an AI chatbot trained on business context, SEO infrastructure, and client management systems. It runs 24/7 on infrastructure I maintain.</p>
+        <div class="proj-tags">
+          <span class="ptag">Python</span><span class="ptag">Node.js</span><span class="ptag">HTML/CSS</span>
+          <span class="ptag">Listmonk</span><span class="ptag">Cloudflare</span><span class="ptag">AI</span>
+        </div>
+      </div>
+      <div class="proj-right">
+        <span class="proj-status st-live">● Live</span>
+        <a href="https://craftededgesolutions.africa" target="_blank" rel="noopener" class="proj-link-btn">Visit <span class="arr">↗</span></a>
+      </div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-idx">02</div>
+      <div class="proj-info">
+        <h3>Wellness Solutions Africa</h3>
+        <p>Full digital platform for a physiotherapy and corporate wellness company. I architected and built the entire system: online bookings, M-Pesa STK Push payments, WhatsApp client intake, an AI-powered wellness concierge, and a full client management backend. Live and serving clients.</p>
+        <div class="proj-tags">
+          <span class="ptag">TypeScript</span><span class="ptag">Django</span><span class="ptag">React</span>
+          <span class="ptag">M-Pesa Daraja</span><span class="ptag">WhatsApp API</span><span class="ptag">AI</span>
+        </div>
+      </div>
+      <div class="proj-right">
+        <span class="proj-status st-live">● Live</span>
+        <a href="https://wellness-solutions.africa" target="_blank" rel="noopener" class="proj-link-btn">Visit <span class="arr">↗</span></a>
+      </div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-idx">03</div>
+      <div class="proj-info">
+        <h3>Shopify Marketing AI</h3>
+        <p>A working prototype of an AI agent system for automating Shopify store marketing workflows — AI-driven campaign generation, content scheduling, and audience targeting. The core agent logic is functional and well-structured; built to demonstrate full-stack AI agent development.</p>
+        <div class="proj-tags">
+          <span class="ptag">TypeScript</span><span class="ptag">AI Agents</span>
+          <span class="ptag">Shopify API</span><span class="ptag">Automation</span>
+        </div>
+      </div>
+      <div class="proj-right">
+        <span class="proj-status st-proto">⬡ Prototype</span>
+        <a href="https://github.com/meshack-vs-you-all/shopify-marketing-ai" target="_blank" rel="noopener" class="proj-link-btn">GitHub <span class="arr">↗</span></a>
+      </div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-idx">04</div>
+      <div class="proj-info">
+        <h3>Complete Backend — Subscription System</h3>
+        <p>Production-ready subscription management system with full billing logic, user lifecycle management, plan upgrades/downgrades, and webhook handling. Designed to drop directly into a live SaaS product without modification.</p>
+        <div class="proj-tags">
+          <span class="ptag">Node.js</span><span class="ptag">JavaScript</span>
+          <span class="ptag">REST API</span><span class="ptag">SaaS</span><span class="ptag">Billing</span>
+        </div>
+      </div>
+      <div class="proj-right">
+        <span class="proj-status st-oss">◈ Open Source</span>
+        <a href="https://github.com/meshack-vs-you-all/Complete-Backend" target="_blank" rel="noopener" class="proj-link-btn">GitHub <span class="arr">↗</span></a>
+      </div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-idx">05</div>
+      <div class="proj-info">
+        <h3>Hermes + Pi — Personal AI Agent Stack</h3>
+        <p>My personal AI infrastructure. Hermes: a multi-tool agent running on Groq LLaMA 70B with Ollama GPU fallback. Has tools for Spotify control, web search, file management, cron delegation, and agent-to-agent handoff. Pi: a Node.js coding agent on the same cloud backend. Both run daily as functional tools, not demos.</p>
+        <div class="proj-tags">
+          <span class="ptag">Python</span><span class="ptag">Node.js</span><span class="ptag">Groq API</span>
+          <span class="ptag">Ollama</span><span class="ptag">MCP</span><span class="ptag">CUDA</span>
+        </div>
+      </div>
+      <div class="proj-right">
+        <span class="proj-status st-infra">◎ Personal Infra</span>
+      </div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-idx">06</div>
+      <div class="proj-info">
+        <h3>Step Up Connect</h3>
+        <p>Youth growth ecosystem platform connecting young Kenyans with skills programmes, gigs, and AI-powered career development tools. An active initiative under Crafted Edge Solutions, currently in development.</p>
+        <div class="proj-tags">
+          <span class="ptag">HTML/CSS</span><span class="ptag">JavaScript</span>
+          <span class="ptag">AI</span><span class="ptag">Kenya</span>
+        </div>
+      </div>
+      <div class="proj-right">
+        <span class="proj-status st-proto">⬡ In Development</span>
+        <a href="https://github.com/meshack-vs-you-all/step-up-connect" target="_blank" rel="noopener" class="proj-link-btn">GitHub <span class="arr">↗</span></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA strip -->
+  <section style="border-top: 1px solid var(--border);">
+    <div class="inner" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px;">
+      <div>
+        <h2 class="big reveal" style="font-size:clamp(1.8rem,4vw,3rem); margin-bottom:8px">Have a project in mind?</h2>
+        <p class="reveal" style="color:var(--fg-2);font-size:0.9rem;font-weight:300">Let's talk about what you're building and what it needs.</p>
+      </div>
+      <a href="contact.html" class="btn btn-fill reveal">Start a conversation →</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-l">MESHACK<span class="acc">.</span></div>
+    <p>Nairobi, Kenya · EAT · © 2026</p>
+    <div class="foot-links">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://github.com/meshack-vs-you-all" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <div class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    gsap.from(['#ph-label','#ph-title', '.page-hero p'], { opacity:0, y:40, stagger:0.15, duration:0.9, ease:'power3.out', delay:0.4 });
+  </script>
+</body>
+</html>
