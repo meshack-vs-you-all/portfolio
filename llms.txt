@@ -2,7 +2,7 @@
 > High-performance digital infrastructure, private AI systems, and refined developer experience.
 
 ## Summary
-Meshack Mogire is a Principal Systems Architect and AI Builder based in Nairobi, Kenya. He specializes in building resilient, owner-controlled digital ecosystems and private AI infrastructure. He operates a selective partnership model (limited to 5 clients) and publishes technical insights on architecture and operational efficiency.
+Meshack Mogire leads a Principal-Led Systems Architecture studio based in Nairobi, Kenya. We specialize in building resilient, owner-controlled digital ecosystems and private AI infrastructure. We operate a selective partnership model (limited to 5 clients) and publish technical insights on architecture and operational efficiency.
 
 ## Key Links
 - Main Portfolio: https://meshack.craftededgesolutions.africa
@@ -24,7 +24,7 @@ Meshack Mogire is a Principal Systems Architect and AI Builder based in Nairobi,
 - Developer Experience (DX) as a Business Lever.
 
 ## Selective Partnership Model
-Meshack accepts only 5 high-impact clients at a time to ensure senior-led precision and deep architectural focus.
+We accept only 5 high-impact clients at a time to ensure senior-led precision and deep architectural focus.
 
 ## Contact
 Email: hello@craftededgesolutions.africa
