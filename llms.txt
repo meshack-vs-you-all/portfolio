@@ -1,0 +1,32 @@
+# Meshack Mogire — Insights & Engineering Philosophy
+> High-conviction engineering, AI sovereignty, and developer experience for modern technical leaders.
+
+## Summary
+Meshack Mogire is a Sovereign Systems Engineer and AI Architect based in Nairobi, Kenya. He specializes in building resilient, self-hosted digital ecosystems and private AI infrastructure. He operates a selective partnership model (limited to 5 clients) and publishes technical insights on DX and infrastructure.
+
+## Key Links
+- Main Portfolio: https://meshack.craftededgesolutions.africa
+- Selected Work: https://meshack.craftededgesolutions.africa/work.html
+- Strategic Engagement: https://meshack.craftededgesolutions.africa/about.html
+- Technical Discovery: https://meshack.craftededgesolutions.africa/contact.html
+- Agency: https://craftededgesolutions.africa
+
+## Core Capabilities
+- Sovereign Platform Engineering (React, Next.js, Django, FastAPI)
+- Private AI Infrastructure (Local GPU inference, custom agents, private pipelines)
+- Strategic Automation (n8n, M-Pesa, WhatsApp Business API)
+- Full-Cycle Technical Ownership (Architecture to 24/7 automated operations)
+
+## Insights & Thought Leadership
+- The Case for Technical Sovereignty: Why businesses must own their stack.
+- Building in Constraints: Engineering high-performance systems in emerging markets.
+- Private AI: Moving beyond conceptual demos to production-grade agents.
+- Developer Experience (DX) as a Business Lever.
+
+## Selective Partnership Model
+Meshack accepts only 5 high-impact clients at a time to ensure senior-led precision and deep architectural focus.
+
+## Contact
+Email: hello@craftededgesolutions.africa
+LinkedIn: https://linkedin.com/in/meshackmogire
+GitHub: https://github.com/meshack-vs-you-all

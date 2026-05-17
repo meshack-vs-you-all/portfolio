@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insights — Meshack Mogire</title>
+  <meta name="description" content="Technical reports, developer experience (DX) insights, and strategic engineering updates from Meshack Mogire." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .insights-hero { padding: 140px var(--pad-h) 80px; border-bottom: 1px solid var(--border); }
+    .insights-hero h1 { font-family: var(--display); font-size: clamp(3.5rem, 12vw, 10rem); font-weight: 800; line-height: 0.9; letter-spacing: -0.04em; }
+    .insights-hero p { font-size: 1rem; color: var(--fg-2); font-weight: 300; max-width: 520px; margin-top: 24px; line-height: 1.7; }
+
+    .newsletter-section { padding: var(--gap-section) var(--pad-h); background: var(--bg-2); border-bottom: 1px solid var(--border); }
+    .newsletter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap-grid); align-items: start; }
+    @media (max-width: 800px) { .newsletter-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+    .newsletter-info h2 { font-family: var(--display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1; letter-spacing: -0.02em; margin-bottom: 24px; }
+    .newsletter-info p { font-size: 1rem; color: var(--fg-2); line-height: 1.7; font-weight: 300; margin-bottom: 32px; }
+    
+    .pricing-pill { display: inline-flex; align-items: center; gap: 12px; padding: 12px 20px; background: rgba(255,92,0,0.08); border: 1px solid rgba(255,92,0,0.2); border-radius: 4px; margin-bottom: 32px; }
+    .pricing-pill .price { font-family: var(--display); font-size: 1.5rem; font-weight: 800; color: var(--accent); }
+    .pricing-pill .meta { font-size: 0.75rem; color: var(--fg-2); text-transform: uppercase; letter-spacing: 0.08em; }
+
+    .sub-form { display: flex; flex-direction: column; gap: 16px; max-width: 400px; }
+    .sub-form input { background: var(--bg); border: 1px solid var(--border); padding: 16px 20px; border-radius: 2px; color: var(--fg); font-family: var(--body); font-size: 0.95rem; outline: none; transition: border-color 0.2s; }
+    .sub-form input:focus { border-color: var(--accent); }
+    
+    .pay-btn { background: var(--accent); color: var(--fg); padding: 16px 28px; border-radius: 2px; font-family: var(--display); font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; cursor: pointer; transition: transform 0.2s, background 0.2s; display: flex; align-items: center; justify-content: center; gap: 12px; }
+    .pay-btn:hover { background: #e65200; transform: translateY(-1px); }
+
+    .article-list { padding: var(--gap-section) var(--pad-h); }
+    .article-card { display: grid; grid-template-columns: 140px 1fr; gap: 48px; padding: 48px 0; border-bottom: 1px solid var(--border); transition: transform 0.3s; }
+    .article-card:first-child { border-top: 1px solid var(--border); }
+    .article-card:hover { transform: translateX(12px); }
+    .article-meta { font-family: var(--mono); font-size: 0.7rem; color: var(--fg-3); text-transform: uppercase; letter-spacing: 0.08em; padding-top: 6px; }
+    .article-content h3 { font-family: var(--display); font-size: clamp(1.5rem, 3.5vw, 2.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 16px; }
+    .article-content p { font-size: 0.95rem; color: var(--fg-2); line-height: 1.7; font-weight: 300; max-width: 640px; margin-bottom: 24px; }
+    .article-tag { display: inline-block; font-size: 0.7rem; font-weight: 700; background: var(--border); padding: 4px 10px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--fg-2); }
+    .tag-free { color: #22c55e; background: rgba(34,197,94,0.08); }
+    .tag-premium { color: var(--accent); background: rgba(255,92,0,0.08); }
+
+    @media (max-width: 600px) { .article-card { grid-template-columns: 1fr; gap: 16px; } .article-meta { padding-top: 0; } }
+  </style>
+</head>
+<body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="curtain" id="curtain"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">MESHACK<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="work.html">Work</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-avail"><span class="pulse"></span> Available</div>
+    <button class="nav-mobile-btn" onclick="toggleMobileNav()"><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" onclick="closeMobileNav()">Home</a>
+    <a href="work.html" onclick="closeMobileNav()">Work</a>
+    <a href="insights.html" onclick="closeMobileNav()">Insights</a>
+    <a href="about.html" onclick="closeMobileNav()">About</a>
+    <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <div class="insights-hero">
+    <span class="label" id="ih-label">Engineering Intelligence</span>
+    <h1 id="ih-title">Reports on<br/><em>Digital Sovereignty.</em></h1>
+    <p>Strategic analysis on developer experience (DX), private AI infrastructure, and the operational architecture of high-performance technical ecosystems.</p>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <div class="newsletter-grid">
+      <div class="newsletter-info reveal">
+        <span class="label" style="margin-bottom:16px;">The Sovereign Engineer</span>
+        <h2>Weekly Technical Updates.</h2>
+        <p>A high-signal newsletter for technical leaders and founders. I drop deep-dive DX reports, sovereign stack guides, and educational resources for modern engineers.</p>
+        
+        <div class="pricing-pill">
+          <span class="price">$0.99</span>
+          <span class="meta">/ month · Multi-currency via Paystack</span>
+        </div>
+        
+        <form class="sub-form">
+          <input type="email" placeholder="principal@yourcompany.com" required />
+          <button type="button" class="pay-btn" onclick="alert('Paystack integration coming soon — creating mailbox hello@craftededgesolutions.africa now.')">
+            Subscribe Now
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="newsletter-perks reveal" style="padding-top: 12px;">
+        <div class="cap-grid" style="grid-template-columns: 1fr; border: 1px solid var(--border);">
+          <div class="cap-cell">
+            <h3>DX Intelligence Reports</h3>
+            <p>Monthly audits of engineering workflows and tools that actually drive ROI.</p>
+          </div>
+          <div class="cap-cell">
+            <h3>Sovereign AI Stack Guides</h3>
+            <p>Step-by-step blueprints for self-hosting private LLMs and custom agentic systems.</p>
+          </div>
+          <div class="cap-cell">
+            <h3>Free Educational Bursts</h3>
+            <p>Periodic tactical guides for modern devs—distributed free to help the ecosystem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section class="article-list">
+    <div class="inner">
+      <span class="label reveal" style="margin-bottom: 48px;">Latest Thinking</span>
+      
+      <div class="article-card reveal">
+        <div class="article-meta">MAY 2026</div>
+        <div class="article-content">
+          <span class="article-tag tag-premium">Premium Report</span>
+          <h3>The Sovereign Engineering Manifesto.</h3>
+          <p>Why businesses are moving away from fragile SaaS dependencies and towards private, self-hosted digital ecosystems.</p>
+          <a href="#" class="btn-outline btn" style="font-size:0.7rem; padding: 8px 16px;">Read Excerpt</a>
+        </div>
+      </div>
+
+      <div class="article-card reveal">
+        <div class="article-meta">APR 2026</div>
+        <div class="article-content">
+          <span class="article-tag tag-free">Free Resource</span>
+          <h3>Local LLMs in Production: A Reality Check.</h3>
+          <p>Cutting through the hype—what it actually takes to run GPU-accelerated inference locally for business logic.</p>
+          <a href="#" class="btn-outline btn" style="font-size:0.7rem; padding: 8px 16px;">Read Article</a>
+        </div>
+      </div>
+
+      <div class="article-card reveal">
+        <div class="article-meta">MAR 2026</div>
+        <div class="article-content">
+          <span class="article-tag tag-premium">Premium Report</span>
+          <h3>Developer Experience (DX) Audit: Q1 2026.</h3>
+          <p>An exhaustive analysis of the tooling and cultural shifts driving engineering efficiency in emerging technical markets.</p>
+          <a href="#" class="btn-outline btn" style="font-size:0.7rem; padding: 8px 16px;">Read Excerpt</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-l">MESHACK<span class="acc">.</span></div>
+    <p>Nairobi, Kenya · EAT · © 2026</p>
+    <div class="foot-links">
+      <a href="work.html">Work</a>
+      <a href="insights.html">Insights</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://github.com/meshack-vs-you-all" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <div class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    gsap.from(['#ih-label','#ih-title'], { opacity:0, y:40, stagger:0.15, duration:0.9, ease:'power3.out', delay:0.4 });
+  </script>
+</body>
+</html>
