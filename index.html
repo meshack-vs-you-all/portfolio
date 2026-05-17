@@ -8,9 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <style>
-    .home-about { padding: 100px 48px; }
-    .home-about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-    .home-about-left h2 { font-family: var(--display); font-size: clamp(2rem, 4.5vw, 3.8rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; margin-bottom: 28px; }
+    .home-about { padding: var(--gap-section) var(--pad-h); }
+    .home-about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap-grid); align-items: start; }
+    .home-about-left h2 { font-family: var(--display); font-size: clamp(1.8rem, 4.5vw, 3.8rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; margin-bottom: 28px; }
     .home-about-left p { font-size: 1rem; color: var(--fg-2); line-height: 1.85; font-weight: 300; margin-bottom: 20px; }
     .home-about-left p strong { color: var(--fg); font-weight: 500; }
     .home-about-right { display: flex; flex-direction: column; gap: 1px; background: var(--border); }
@@ -19,7 +19,7 @@
     .stat-inline-num .acc { color: var(--accent); }
     .stat-inline-info h4 { font-family: var(--display); font-size: 0.9rem; font-weight: 700; margin-bottom: 4px; }
     .stat-inline-info p { font-size: 0.8rem; color: var(--fg-2); font-weight: 300; line-height: 1.5; margin: 0; }
-    @media (max-width: 900px) { .home-about { padding: 72px 24px; } .home-about-grid { grid-template-columns: 1fr; gap: 48px; } }
+    @media (max-width: 900px) { .home-about-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
